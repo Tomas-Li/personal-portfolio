@@ -14,7 +14,7 @@
 }
 
 .navbar-logo{
-  padding: 15px 0 0 5px;
+  padding: 30px 0 0 5px;
 }
 
 .navbar-logo img {
@@ -65,7 +65,7 @@
   font-size: 20px;
   color: var(--color-unactive);
   cursor: pointer;
-  padding: 5px 0;
+  padding: 5px 0 30px 0;
 }
 
 .navbar-links button:hover{
