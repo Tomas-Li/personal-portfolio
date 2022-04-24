@@ -21,18 +21,18 @@ const HomePage = () => {
   }, []) 
 
   return (
-    <div className='main-info'>
-      <div className='main-text'>
-        <span className={letterClass}>H</span>
-        <span className={`${letterClass} _12`}>i,</span>
-        <br />
-        <span className={`${letterClass} _13`}>I</span>
-        <span className={`${letterClass} _14`}>'m</span>
-        <img src={LogoTitle} alt="developer" className={imgLetterClass} />
-        <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15}/>
-        <br />
-        <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={20}/>
-      </div>
+    <div className='home-info-cont'>
+      <h1>
+      <span className={letterClass}>H</span>
+      <span className={`${letterClass} _12`}>i,</span>
+      <br />
+      <span className={`${letterClass} _13`}>I</span>
+      <span className={`${letterClass} _14`}>'m</span>
+      <img src={LogoTitle} alt="developer" className={imgLetterClass} />
+      <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15}/>
+      <br />
+      <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={20}/>
+      </h1>
       <div className='aditional-text'>
         <ul>
           <li>Aeronautic Engineer /</li>

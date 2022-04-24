@@ -16,15 +16,16 @@ const About = () => {
   }, []) 
 
   return (
-    <div class="main-info">
+    <div className='about-info-cont'>
       <div className='main-text'>
-          <p>
+          <h1>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={aboutMeArray}
-              idx={15}
+              idx={12}
             />
-          </p>
+          </h1>
+        </div>
         <div className="about-text">
           <p> 
             I'm an <b>Aeronautic Engineer</b> who has a passion for coding and developing new things!
@@ -37,7 +38,6 @@ const About = () => {
             If I have to define myself in one sentence that would be a hard-working person who can't rest until everything he has to do is done. Personallity wise, I'm the kind of guy who enjoys expending his free time relaxing at home, while learning new things or being in a call with my friends. BTW I LOVE TECH! If you want to make me happy just talk to my about new developings or intresting facts that you know.
           </p> 
         </div>
-      </div>
     </div>
   )
 }

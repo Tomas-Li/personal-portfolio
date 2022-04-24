@@ -4,6 +4,7 @@ import HomePage from './HomePage';
 import About from './About';
 import Contact from './Contact'
 import Cube from './Cube'
+import Form from './Form'
 
 import './MainContainer.css'
 import Logo from './Logo';
@@ -16,7 +17,8 @@ const MainContainer = () => {
           &lt;html&gt; <br/>
           &nbsp;&nbsp;&lt;body&gt;
         </div>
-        <div>
+        <div className='main-content'>
+          <div style={{minWidth: "20%"}}></div>
           <Routes>
             <Route path='/' element={<HomePage/>}/>
             <Route path='/about' element={<About/>}/>
@@ -33,7 +35,7 @@ const MainContainer = () => {
           <Routes>
             <Route path='/' element={<Logo />}/>
             <Route path='/about' element={<Cube />}/>
-            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/contact' element={<Form />}/>
           </Routes>
         </div>
       </div>

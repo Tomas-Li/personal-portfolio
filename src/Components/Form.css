@@ -1,0 +1,45 @@
+.contact-form {
+  min-width: 40vw;
+  min-height: 20vh;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  animation: fadeInUp 2s 1s;
+  animation-fill-mode: forwards;
+}
+
+.form-container input,
+.form-container textarea {
+  padding: 15px 5px;
+  margin: 10px;
+  border: 2px solid var(--color-main-obscured);
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-weight: 400px;
+}
+
+.form-container textarea{
+  padding: 15px 5px 40px 5px;
+}
+
+.form-container input:focus ,
+.form-container textarea:focus {
+  outline: none;
+  border: 2px solid var(--color-main)
+}
+
+.form-row > * {
+  min-width: 96%;
+}
+
+.half {
+  display: flex;
+}
+.half > * {
+  width: 50%;
+  text-align: center;
+}

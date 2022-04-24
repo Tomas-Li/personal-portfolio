@@ -20,6 +20,10 @@
   width: 50%;
 }
 
+.info-container .main-content{
+  display:flex;
+}
+
 .deco-container {
   display: flex;
   flex-direction: column;
@@ -29,11 +33,6 @@
 }
 
 /* Clases compartidas en los hijos */
-
-.main-info {
-  margin: 0 10vw;
-}
-
 .main-text {
   color: white;
   font-size: 50px;
@@ -42,25 +41,47 @@
   font-weight: 400;
 }
 
-.main-text:before {
-  content: '<>';
+.main-text h1 {
+  font-size: 53px;
+  font-family: 'Coolvetica';
+  color: white;
+  font-weight: 400;
+  margin-top: 0;
+  position: relative;
+  margin-bottom: 40px;
+  left: -30px;
+}
+
+.main-text h1:before {
+  content: '<h1>';
   font-family: 'La Belle Aurore', cursive;
   color: #ffd700;
-  font-size: 28px;
-  position:absolute;
-  transform: translate(-20px, -45px);
-  animation: fadeIn 1s 1.7s backwards;
+  font-size: 18px;
+  position: absolute;
+  margin-top: -20px;
+  left: -40px;
+  opacity: 0.6;
+  line-height: 18px;
+}
+
+.main-text h1:after {
+  content: '</h1>';
+  font-family: 'La Belle Aurore', cursive;
+  color: #ffd700;
+  font-size: 18px;
+  line-height: 18px;
+  position: absolute;
+  left: 230px;
+  bottom: -20px;
+  margin-left: 20px;
   opacity: 0.6;
 }
 
-.main-text:after {
-  content: '</>';
-  font-family: 'La Belle Aurore', cursive;
-  color: #ffd700;
-  font-size: 25px;
-  position: absolute;
-  margin-top: 18px;
-  margin-left: 20px;
-  animation: fadeIn 1s 1.7s backwards;
-  opacity: 0.6;
+.main-text p {
+  font-size: 18px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 300;
+  max-width: fit-content;
+  animation: pulse 1s;
 }
