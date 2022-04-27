@@ -28,7 +28,7 @@ const Contact = () => {
           </p>
       </div>
     
-    <Loader type="pacman" />
+    {/* <Loader type="pacman" /> */}
   </>
   )
 }
