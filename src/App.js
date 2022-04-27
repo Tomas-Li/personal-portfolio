@@ -2,7 +2,7 @@ import './App.css';
 import MainContainer from './Components/MainContainer';
 import Sidebar from './Components/Sidebar';
 
-// import './Loaders.scss'
+import './Loaders.scss'
 
 function App() {
   return (
