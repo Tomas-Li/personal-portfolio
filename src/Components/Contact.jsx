@@ -14,18 +14,22 @@ const Contact = () => {
   }, []) 
 
   return (
-    <div className='main-text'>
-        <h1>
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={contactMeArray}
-            idx={5}
-          />
-        </h1>
-        <p>
-        If you are interested in my profile, please send me a message!
-        </p>
-    </div>
+    <>
+      <div className='main-text'>
+          <h1>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={contactMeArray}
+              idx={5}
+            />
+          </h1>
+          <p>
+          If you are interested in my profile, please send me a message!
+          </p>
+      </div>
+    
+    <Loader type="pacman" />
+  </>
   )
 }
 

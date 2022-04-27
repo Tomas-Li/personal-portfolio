@@ -11,7 +11,7 @@ import Logo from './Logo';
 
 const MainContainer = () => {
   return (
-    <div className='main-container'>
+    <div className='container'>
       <div className='info-container'>
         <div className='tags'>
           &lt;html&gt; <br/>

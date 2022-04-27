@@ -58,7 +58,7 @@
 .flat-button:hover {
   background: var(--color-main);
   color: var(--color-background);
-  border: 2px solid red;
+  border: 2px solid var(--color-main);
 }
 
 /* Tags */
